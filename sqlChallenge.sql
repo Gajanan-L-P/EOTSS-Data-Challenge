@@ -48,3 +48,13 @@ insert into eotssChallenge.ga_session_features values
 (2237, 'organic', 'desktop', 'Safari'),
 (2002, 'direct', 'desktop', 'Edge'),
 (2005, 'direct', 'mobile', 'Safari');
+
+-- Query 1
+select sum(pageviews)
+from ga_session_views
+where hit_timestamp > DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 7 day);
+
+-- Query 2
+select count(session_id)
+from ga_session_features
+where medium = 'organic';

@@ -1,4 +1,4 @@
-# EOTSS Data Challenge (2 hours limit)
+# EOTSS Data Challenge
 Assignment to be completed within 2 hours limit and uploaded to GitHub.
 
 ## SQL

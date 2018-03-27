@@ -1,7 +1,7 @@
 # EOTSS Data Challenge (2 hours limit)
 Assignment to be completed within 2 hours limit and uploaded to GitHub.
 
-#$ SQL
+## SQL
 ### Instructions
 Save the four queries below in file in the GitHub repository
 1.	Write a query that shows how many pageviews occurred in the last week

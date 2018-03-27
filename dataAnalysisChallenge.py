@@ -17,5 +17,9 @@ disease = disease.set_index('State')
 disease = disease.drop(['Year','113 Cause Name'],axis=1)
 
 indexList = [2,3] + list(range(9,51,6))
-educationAttain = education.iloc[:,indexList]
-educationAttain = educationAttain.set_index('Geography')
+educationLvl = education.iloc[:,indexList]
+educationLvl = educationLvl.set_index('Geography')
+
+educationDisease = educationLvl.merge(disease, left_index=True, right_index=True)
+
+stats.pearsonr(educationDisease["Total; Estimate; Bachelor's degree"],educationDisease['Age-adjusted Death Rate'])
